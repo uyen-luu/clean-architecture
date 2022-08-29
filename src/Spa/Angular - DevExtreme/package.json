@@ -22,7 +22,7 @@
     "@angular/router": "^14.2.0",
     "@auth0/angular-jwt": "^5.0.2",
     "@ngxs-labs/select-snapshot": "^3.0.0",
-    "@ngxs/store": "^3.7.2",
+    "@ngxs/store": "^3.7.5",
     "bootstrap": "^4.6.2",
     "devextreme": "22.1.4",
     "devextreme-angular": "22.1.4",
