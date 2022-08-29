@@ -3,3 +3,6 @@
 ################################################################################
 
 /src/AuthServer/IdentityServer4/AuthServer/obj
+/src/AuthServer/IdentityServer4/AuthServer/bin
+/src/AuthServer/IdentityServer4/.vs/
+/src/Spa/oauth-client/package-lock.json
