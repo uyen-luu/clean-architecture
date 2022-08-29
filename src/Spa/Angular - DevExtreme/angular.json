@@ -64,7 +64,14 @@
               "src/assets/styles/devextreme-override.scss",
               "src/assets/styles/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "jszip",
+              "devextreme-quill",
+              "devexpress-gantt",
+              "devexpress-diagram",
+              "luxon"
+            ]
           },
           "configurations": {
             "production": {
