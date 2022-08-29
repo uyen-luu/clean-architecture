@@ -6,3 +6,5 @@
 /src/AuthServer/IdentityServer4/AuthServer/bin
 /src/AuthServer/IdentityServer4/.vs/
 /src/Spa/oauth-client/package-lock.json
+/src/Spa/Angular - DevExtreme/node_modules
+/src/Spa/Angular - DevExtreme/e2e/src
