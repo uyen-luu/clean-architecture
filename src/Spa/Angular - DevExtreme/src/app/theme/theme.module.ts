@@ -1,28 +1,41 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import {
   ErrorComponent,
-  FooterComponent, ForbiddenComponent,
+  FooterComponent,
+  ForbiddenComponent,
   HeaderComponent,
-  PopoverConfirmBoxComponent, PopoverTitleComponent, PopupContainerComponent,
+  PopoverConfirmBoxComponent,
+  PopoverTitleComponent,
+  PopupContainerComponent,
   SideNavigationMenuComponent,
-  UserPanelComponent
+  UserPanelComponent,
 } from '@app/theme/components';
-import {AutoFocusInputDirective} from '@app/theme/directives';
+import { AutoFocusInputDirective } from '@app/theme/directives';
 import {
   NotAuthorizedContainerComponent,
   SideNavInnerToolbarComponent,
-  SideNavOuterToolbarComponent, SingleCardComponent, UnauthenticatedContentComponent
+  SideNavOuterToolbarComponent,
+  SingleCardComponent,
+  UnauthenticatedContentComponent,
 } from '@app/theme/layouts';
 import {
-  DxButtonModule, DxContextMenuModule, DxDataGridModule,
-  DxDrawerModule, DxFormModule, DxListModule, DxLoadIndicatorModule, DxLoadPanelModule, DxPopoverModule, DxPopupModule,
+  DxButtonModule,
+  DxContextMenuModule,
+  DxDataGridModule,
+  DxDrawerModule,
+  DxFormModule,
+  DxListModule,
+  DxLoadIndicatorModule,
+  DxLoadPanelModule,
+  DxPopoverModule,
+  DxPopupModule,
   DxScrollViewModule,
   DxToolbarModule,
-  DxTreeViewModule
-} from 'devextreme-angular';;
+  DxTreeViewModule,
+} from 'devextreme-angular';
 
 const DEVEXTREME_MODULES = [
   DxToolbarModule,
@@ -32,7 +45,7 @@ const DEVEXTREME_MODULES = [
   DxScrollViewModule,
   DxFormModule,
   DxLoadIndicatorModule,
-  DxDataGridModule
+  DxDataGridModule,
 ];
 //
 const BASE_MODULES = [
@@ -44,7 +57,7 @@ const BASE_MODULES = [
   DxPopupModule,
   DxPopoverModule,
   DxContextMenuModule,
-  DxListModule
+  DxListModule,
 ];
 
 // Components for this module only
@@ -62,33 +75,23 @@ const COMPONENTS = [
   PopupContainerComponent,
   PopoverTitleComponent,
   ErrorComponent,
-  ForbiddenComponent
+  ForbiddenComponent,
 ];
 
 //
-const DIRECTIVES = [
-  AutoFocusInputDirective
-];
+const DIRECTIVES = [AutoFocusInputDirective];
 //
 const PIPES = [];
 
 @NgModule({
-  imports: [
-    ...DEVEXTREME_MODULES,
-    ...BASE_MODULES
-  ],
-  declarations: [
-    ...DIRECTIVES,
-    ...PIPES,
-    ...COMPONENTS
-  ],
+  imports: [...DEVEXTREME_MODULES, ...BASE_MODULES],
+  declarations: [...DIRECTIVES, ...PIPES, ...COMPONENTS],
   exports: [
     ...DEVEXTREME_MODULES,
     ...BASE_MODULES,
     ...DIRECTIVES,
     ...PIPES,
-    ...COMPONENTS
-  ]
+    ...COMPONENTS,
+  ],
 })
-export class ThemeModule {
-}
+export class ThemeModule {}
