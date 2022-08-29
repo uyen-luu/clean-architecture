@@ -100,7 +100,7 @@ namespace AuthServer
                 });
             });
 
-            app.UseCookiePolicy(new CookiePolicyOptions { MinimumSameSitePolicy = SameSiteMode.Strict });
+            app.UseCookiePolicy(new CookiePolicyOptions { MinimumSameSitePolicy = SameSiteMode.Strict }); // Allow cookies work wihout https on cross domain
 
             var serilog = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
